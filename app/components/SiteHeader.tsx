@@ -12,7 +12,6 @@ export default function SiteHeader({ current }: { current: Page }) {
         <a className={current === "how" ? "active" : ""} href="/data-architecture-delivery-kit-site/how-it-works/" aria-current={current === "how" ? "page" : undefined}>How it works</a>
         <a className={current === "outcomes" ? "active" : ""} href="/data-architecture-delivery-kit-site/what-you-get/" aria-current={current === "outcomes" ? "page" : undefined}>What you get</a>
         <a className={current === "offerings" ? "active" : ""} href="/data-architecture-delivery-kit-site/offerings/" aria-current={current === "offerings" ? "page" : undefined}>Technical deep dive</a>
-        <a className="nav-cta" href="/data-architecture-delivery-kit-site/how-it-works/">Start here →</a>
       </nav>
     </header>
   );
