@@ -79,12 +79,12 @@ const diagnosticOutputs = [
 ];
 
 const frequentlyAsked = [
-  ["Do you only advise?", "No. I can stop after an independent assessment, work alongside your engineers, or carry the agreed design through implementation, validation, documentation, and handover."],
-  ["Do you replace our existing platform?", "Only when replacement is justified. Existing systems, skills, contracts, migration risk, and business continuity are treated as real design constraints."],
-  ["Who actually performs the work?", "I lead the architecture and remain directly involved in the work described in the engagement. There is no automatic junior handoff or undisclosed outsourcing."],
-  ["What happens after launch?", "An ongoing partnership can cover scheduled architecture reviews, quality and cost analysis, incident investigation, and improvement planning. Coverage and response windows are defined explicitly; 24/7 support is not implied."],
-  ["How is sensitive information handled?", "Client-specific evidence, decisions, and implementation details remain separated from reusable professional knowledge. Access and data-handling boundaries are agreed before evidence is reviewed."],
-  ["What is the first step?", "Send a short description of what is unreliable, expensive, slow, or blocked. I will use an initial conversation to determine whether a focused diagnostic is appropriate."],
+  ["Do you only advise?", "No. The engagement states whether I assess, work alongside your engineers, or implement the agreed design. Implementation is not included in an advisory scope unless explicitly agreed, and production changes remain subject to your change control and authorized approval."],
+  ["Do you replace our existing platform?", "Not by default. Replacement is recommended only when evidence shows the current platform cannot meet agreed requirements within acceptable risk, cost, or operating constraints. Any migration requires an agreed coexistence, validation, and rollback approach; a recommendation is not authorization to proceed."],
+  ["Who actually performs the work?", "I lead the architecture and remain directly involved in the agreed scope. There is no automatic junior handoff or undisclosed outsourcing. Any specialist involvement is disclosed and agreed before that person receives access or begins work, with responsibilities recorded explicitly."],
+  ["What happens after launch?", "An ongoing partnership can cover scheduled architecture reviews, quality and cost analysis, incident investigation, and improvement planning. Cadence, coverage hours, response windows, and escalation paths are defined explicitly. Your team retains primary operational ownership unless the engagement states otherwise; 24/7 support is not implied."],
+  ["How is sensitive information handled?", "Access is limited to the evidence and systems required by the agreed scope. Client material remains in approved locations and is not reused across engagements or used to train shared models. External AI services receive client material only when the model, data boundary, and purpose have been approved. Credential handling, retention, deletion, and any specialist access are defined before technical access begins."],
+  ["What is the first step?", "Send a high-level description of what is unreliable, expensive, slow, or blocked. Do not email credentials, production data, or confidential documents. The initial conversation determines whether a focused diagnostic is appropriate and what information can be shared safely next."],
 ];
 
 export default function ServicesPage() {
