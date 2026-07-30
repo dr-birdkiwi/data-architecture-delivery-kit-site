@@ -7,18 +7,18 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://dr-birdkiwi.github.io/data-architecture-delivery-kit-site/"),
-    title: "Data Architecture Delivery — Data systems without building a data team",
-    description: "Expert-led design, optional implementation, and continuous data validation for reliable reporting, analytics, and AI-ready data systems.",
+    title: "Data Architecture Delivery — Design, build and assure reliable data systems",
+    description: "Doctorate-level data professionals providing architecture, optional implementation, modernization, and continuous data quality assurance.",
     openGraph: {
-      title: "Get the data system you need—without building a data team",
-      description: "Expert-led design, optional implementation, and continuous data validation for reliable reporting, analytics, and AI-ready data systems.",
+      title: "Build a data system your business can trust",
+      description: "Expert-led data architecture, optional implementation, modernization, and continuous assurance.",
       type: "website",
       images: [{ url: "/data-architecture-delivery-kit-site/og-service.png", width: 1536, height: 1024, alt: "Data Architecture Delivery" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Get the data system you need—without building a data team",
-      description: "Expert-led design, optional implementation, and continuous data validation for reliable reporting, analytics, and AI-ready data systems.",
+      title: "Build a data system your business can trust",
+      description: "Expert-led data architecture, optional implementation, modernization, and continuous assurance.",
       images: ["/data-architecture-delivery-kit-site/og-service.png"],
     },
     icons: { icon: "/data-architecture-delivery-kit-site/favicon.svg" },

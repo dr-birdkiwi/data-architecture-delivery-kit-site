@@ -1,6 +1,6 @@
-# Data Architecture Delivery Kit showcase
+# Data Architecture Delivery website
 
-Public showcase website for the Data Architecture Delivery Kit.
+Public services website for expert-led data architecture, optional implementation, modernization, and continuous data assurance. The public delivery framework remains supporting evidence rather than the service being sold.
 
 ## Live site
 

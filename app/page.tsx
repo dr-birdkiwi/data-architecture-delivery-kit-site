@@ -2,9 +2,9 @@ import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 
 const contextGaps = [
-  ["AI sees only what you provide", "The decisive facts are often unstated, scattered across systems, or held in people’s experience."],
-  ["Plausible is not production-ready", "Valid-looking code can still be wrong for your business, too fragile, or too complex to operate."],
-  ["Reliability needs an owner", "A model does not explain discrepancies, recover failed systems, or accept responsibility for business outcomes."],
+  ["AI sees only what you provide", "The decisive business rules, failure risks, and operating constraints are often unstated or scattered across the company."],
+  ["Plausible is not production-ready", "Valid-looking code can still produce conflicting numbers, fragile pipelines, or a system the team cannot operate."],
+  ["Reliability needs an owner", "A model does not reconcile discrepancies, recover failed systems, or accept responsibility when important data is wrong."],
 ];
 
 export default function LandingPage() {
@@ -14,12 +14,14 @@ export default function LandingPage() {
 
       <section className="home-hero">
         <div className="hero-copy">
-          <div className="eyebrow"><span /> Frontier AI meets accountable data expertise</div>
-          <h1>AI can generate a data system.<br /><em>It cannot know whether it is the right one.</em></h1>
-          <p>Frontier models build quickly—but only from the context they receive. When business rules, failure risks, and operating constraints are missing, plausible output becomes production risk.</p>
+          <div className="eyebrow"><span /> Data architecture, delivery &amp; continuous assurance</div>
+          <h1>Build a data system<br /><em>your business can trust.</em></h1>
+          <p>We help companies design, deliver, modernize, and continuously assure reliable data platforms—without requiring them to build every capability in-house.</p>
           <div className="actions">
-            <a className="button primary" href="/data-architecture-delivery-kit-site/solutions/">See where experts matter <span>→</span></a>
+            <a className="button primary" href="/data-architecture-delivery-kit-site/services/">Explore our services <span>→</span></a>
+            <a className="button ghost" href="/data-architecture-delivery-kit-site/expertise/">Why expertise matters</a>
           </div>
+          <div className="micro-proof"><b>DOCTORATE-LEVEL EXPERTISE</b><span /><strong>Production experience</strong><span /><strong>Design through ongoing assurance</strong></div>
         </div>
 
         <div className="decision-preview" aria-label="Example of a plain-English request becoming a focused architecture review">
@@ -36,16 +38,16 @@ export default function LandingPage() {
       </section>
 
       <section className="promise-strip" aria-label="Core product promise">
-        <div><span>AI</span><strong>Supplies speed</strong></div>
-        <div><span>EXPERTS</span><strong>Supply context and judgment</strong></div>
-        <div><span>PEOPLE</span><strong>Retain accountability</strong></div>
+        <div><span>DESIGN</span><strong>Make the right decisions</strong></div>
+        <div><span>DELIVER</span><strong>Turn decisions into a working system</strong></div>
+        <div><span>ASSURE</span><strong>Keep critical data trustworthy</strong></div>
       </section>
 
       <section className="home-section solutions-preview">
         <div className="section-intro">
-          <span className="kicker">THE CONTEXT PROBLEM</span>
-          <h2>The missing input<br /><em>is expert context.</em></h2>
-          <p>Reliable systems depend on facts that rarely fit in one prompt. Experts know which unknowns change the design—and which plausible answers should not be trusted.</p>
+          <span className="kicker">WHY EXPERTS STILL MATTER</span>
+          <h2>AI can generate a data system.<br /><em>It cannot know whether it is the right one.</em></h2>
+          <p>Frontier models move quickly, but only from the context they receive. Experienced professionals identify the missing facts that change the design—and the plausible answers that should not be trusted.</p>
         </div>
         <div className="solution-preview-grid">
           {contextGaps.map(([title, body], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{body}</p></article>)}
@@ -64,7 +66,7 @@ export default function LandingPage() {
       <section className="home-cta">
         <span>EXPERTISE WITHOUT AN ENTIRE DATA DEPARTMENT</span>
         <h2>Bring in doctorate-level data judgment exactly where your business needs it.</h2>
-        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/solutions/">See where we can help →</a></div>
+        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/services/">See how we can help →</a></div>
       </section>
 
       <SiteFooter />
