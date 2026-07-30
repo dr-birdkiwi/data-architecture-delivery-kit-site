@@ -27,7 +27,7 @@ export default function ExpertPage() {
   return (
     <main>
       <SiteHeader current="offerings" />
-      <section className="page-hero expert-hero"><span className="kicker">TECHNICAL DEEP DIVE</span><h1>Architecture decisions<br /><em>that show their work.</em></h1><p>A verifier-first delivery method for turning evidence, constraints, and expert playbooks into bounded architecture choices, explicit findings, and human-reviewed plans.</p><div className="expert-principle"><span>AI proposes</span><i>→</i><span>Rules constrain</span><i>→</i><span>Tools verify</span><i>→</i><b>Humans approve</b></div></section>
+      <section className="page-hero expert-hero"><span className="kicker">TECHNICAL DEEP DIVE</span><h1>AI-speed delivery.<br /><em>Expert accountability.</em></h1><p>Doctorate-level data professionals use evidence, structured decision methods, automation, and deterministic checks to accelerate delivery without treating a model as the authority on correctness or production readiness.</p><div className="expert-principle"><span>AI proposes</span><i>→</i><span>Experts decide</span><i>→</i><span>Tools verify</span><i>→</i><b>Humans approve</b></div></section>
 
       <section className="method-section">
         <div className="section-intro"><span className="kicker">WHAT MAKES IT DIFFERENT</span><h2>More disciplined than an unconstrained AI answer.</h2><p>The model is useful for interpretation and generation. It is not treated as the authority on correctness, policy, evidence, or production readiness.</p></div>
@@ -49,9 +49,9 @@ export default function ExpertPage() {
         <div className="evidence-levels">{evidence.map(([number, title, body]) => <article key={number}><span>{number}</span><div><h3>{title}</h3><p>{body}</p></div></article>)}</div>
       </section>
 
-      <section className="benchmark-band"><div><span className="kicker light">EVALUATION, NOT THEATRE</span><h2>The kit is challenged against blind scenarios and counterfactuals.</h2></div><div><article><strong>Blind evidence</strong><p>Generation cannot access hidden expected decisions or findings.</p></article><article><strong>Counterfactual change</strong><p>Freshness, team capability, portability, and recovery requirements are mutated independently.</p></article><article><strong>Human adjudication</strong><p>Experienced reviewers may override the oracle and record why.</p></article></div></section>
+      <section className="benchmark-band"><div><span className="kicker light">EVALUATION, NOT THEATRE</span><h2>The delivery method is challenged against blind scenarios and counterfactuals.</h2></div><div><article><strong>Blind evidence</strong><p>Generation cannot access hidden expected decisions or findings.</p></article><article><strong>Counterfactual change</strong><p>Freshness, team capability, portability, and recovery requirements are mutated independently.</p></article><article><strong>Human adjudication</strong><p>Experienced reviewers may override the oracle and record why.</p></article></div></section>
 
-      <section className="repo-cta"><span>INSPECT THE SHOWCASE</span><h2>The public repository contains this website and its GitHub Pages deployment workflow.</h2><a className="button lime" href="https://github.com/dr-birdkiwi/data-architecture-delivery-kit-site" target="_blank" rel="noreferrer">View site source ↗</a></section>
+      <section className="repo-cta"><span>FOR TECHNICAL EVALUATORS</span><h2>Inspect the public delivery framework without exposing client-specific knowledge or evidence.</h2><a className="button lime" href="https://github.com/dr-birdkiwi/data-architecture-delivery-kit" target="_blank" rel="noreferrer">Open the public framework ↗</a></section>
       <SiteFooter />
     </main>
   );

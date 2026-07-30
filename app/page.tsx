@@ -3,9 +3,9 @@ import SiteHeader from "./components/SiteHeader";
 
 const solutionPreview = [
   ["Trusted reporting", "Make important reports explainable, reproducible, and easier to trust."],
-  ["Analytics foundation", "Give teams reliable answers without building more platform than they can operate."],
+  ["Data foundation for AI", "Make company data usable, governed, and ready for practical AI applications."],
   ["Platform modernization", "Move away from fragile or expensive systems without a risky big-bang rewrite."],
-  ["Lakehouse at scale", "Balance openness, performance, governance, and operating reality at high volume."],
+  ["Continuous data assurance", "Keep critical data accurate, fresh, and explainable after delivery."],
 ];
 
 export default function LandingPage() {
@@ -15,41 +15,41 @@ export default function LandingPage() {
 
       <section className="home-hero">
         <div className="hero-copy">
-          <div className="eyebrow"><span /> A better way to design data platforms</div>
-          <h1>Turn your data problem<br /><em>into the right data system.</em></h1>
-          <p>Whether you need trusted reports, a new analytics platform, or a large-scale lakehouse, start by describing the business need in plain English. We uncover the requirements people usually miss, compare sensible designs, and produce a plan your team can challenge.</p>
+          <div className="eyebrow"><span /> Expert-led data and AI systems</div>
+          <h1>Get the data system you need<br /><em>without building a data team.</em></h1>
+          <p>We design reliable reporting, analytics, and AI-ready data systems around your business. We can hand your team a clear implementation package, build the system with you, and continuously validate the data after launch.</p>
           <div className="actions">
             <a className="button primary" href="/data-architecture-delivery-kit-site/solutions/">Find your starting point <span>→</span></a>
             <a className="button ghost" href="/data-architecture-delivery-kit-site/how-it-works/">See how it works</a>
           </div>
-          <div className="micro-proof"><b>No architecture expertise required.</b><span /> Start with the business need.</div>
+          <div className="micro-proof"><b>No architecture expertise required.</b><span /> Doctorate-level professionals remain accountable for the technical judgment.</div>
         </div>
 
         <div className="decision-preview" aria-label="Example of a plain-English request becoming a focused architecture review">
           <div className="preview-top"><span>YOUR DATA PROBLEM</span><b>PLAIN ENGLISH</b></div>
           <blockquote>“Our finance reports are slow, expensive, and difficult to trust.”</blockquote>
-          <div className="preview-divider"><span>WHAT THE PROCESS SURFACES</span></div>
+          <div className="preview-divider"><span>WHAT WE RESOLVE</span></div>
           <div className="missed-grid">
-            <article><i>01</i><strong>Correctness</strong><small>Must old reports reproduce exactly?</small></article>
-            <article><i>02</i><strong>Recovery</strong><small>What failure can the business tolerate?</small></article>
-            <article><i>03</i><strong>Team fit</strong><small>Who will operate the result?</small></article>
+            <article><i>01</i><strong>What matters</strong><small>Which data must the business trust?</small></article>
+            <article><i>02</i><strong>What fits</strong><small>What works with your systems and budget?</small></article>
+            <article><i>03</i><strong>Who owns it</strong><small>Build it together or hand it over?</small></article>
           </div>
-          <div className="preview-result"><span>5 focused questions</span><i>→</i><span>2–3 viable directions</span><i>→</i><b>1 reviewable plan</b></div>
+          <div className="preview-result"><span>Clear design</span><i>→</i><span>Optional implementation</span><i>→</i><b>Continuous assurance</b></div>
         </div>
       </section>
 
       <section className="promise-strip" aria-label="Core product promise">
-        <div><span>01</span><strong>Plain-English input</strong></div>
-        <div><span>02</span><strong>Context-aware choices</strong></div>
-        <div><span>03</span><strong>Evidence-backed plan</strong></div>
-        <div><span>04</span><strong>Clear next step</strong></div>
+        <div><span>01</span><strong>Business-first design</strong></div>
+        <div><span>02</span><strong>Optional implementation</strong></div>
+        <div><span>03</span><strong>Doctorate-level expertise</strong></div>
+        <div><span>04</span><strong>Continuous assurance</strong></div>
       </section>
 
       <section className="home-section solutions-preview">
         <div className="section-intro">
           <span className="kicker">BUILT AROUND YOUR PROBLEM</span>
-          <h2>You bring the need.<br /><em>The method finds the shape.</em></h2>
-          <p>There is no universal “best” data stack. The right direction depends on correctness, speed, scale, cost, existing systems, and the people who must run it.</p>
+          <h2>You bring the business problem.<br /><em>We take responsibility for the technical path.</em></h2>
+          <p>You do not need to choose a warehouse, database, or AI stack. We translate the outcome you need into a design that fits your systems, risks, budget, and operating reality.</p>
         </div>
         <div className="solution-preview-grid">
           {solutionPreview.map(([title, body], index) => <a href="/data-architecture-delivery-kit-site/solutions/" key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{body}</p><b>Explore solution →</b></a>)}
@@ -67,8 +67,8 @@ export default function LandingPage() {
 
       <section className="home-cta">
         <span>FROM VAGUE NEED TO CLEAR NEXT STEP</span>
-        <h2>See how the decisions come together.</h2>
-        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/solutions/">Explore solutions →</a><a className="text-link" href="/data-architecture-delivery-kit-site/how-it-works/">See how it works</a></div>
+        <h2>See where we can remove the data burden.</h2>
+        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/solutions/">Explore solutions →</a><a className="text-link" href="/data-architecture-delivery-kit-site/how-it-works/">See the engagement</a></div>
       </section>
 
       <SiteFooter />
