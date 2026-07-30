@@ -14,14 +14,14 @@ export default function LandingPage() {
 
       <section className="home-hero">
         <div className="hero-copy">
-          <div className="eyebrow"><span /> Data architecture, delivery &amp; continuous assurance</div>
+          <div className="eyebrow"><span /> Independent data architecture, delivery &amp; assurance</div>
           <h1>Build a data system<br /><em>your business can trust.</em></h1>
-          <p>We help companies design, deliver, modernize, and continuously assure reliable data platforms—without requiring them to build every capability in-house.</p>
+          <p>I help companies design, deliver, modernize, and continuously assure reliable data platforms—without the cost and delay of assembling an entire specialist team.</p>
           <div className="actions">
-            <a className="button primary" href="/data-architecture-delivery-kit-site/services/">Explore our services <span>→</span></a>
-            <a className="button ghost" href="/data-architecture-delivery-kit-site/expertise/">Why expertise matters</a>
+            <a className="button primary" href="/data-architecture-delivery-kit-site/services/">Explore services <span>→</span></a>
+            <a className="button ghost" href="/data-architecture-delivery-kit-site/expertise/">Why work with me</a>
           </div>
-          <div className="micro-proof"><b>DOCTORATE-LEVEL EXPERTISE</b><span /><strong>Production experience</strong><span /><strong>Design through ongoing assurance</strong></div>
+          <div className="micro-proof"><b>PHD IN COMPUTER SCIENCE</b><span /><strong>7+ years in production data platforms</strong><span /><strong>Finance and digital assets</strong></div>
         </div>
 
         <div className="decision-preview" aria-label="Example of a plain-English request becoming a focused architecture review">
@@ -47,7 +47,7 @@ export default function LandingPage() {
         <div className="section-intro">
           <span className="kicker">WHY EXPERTS STILL MATTER</span>
           <h2>AI can generate a data system.<br /><em>It cannot know whether it is the right one.</em></h2>
-          <p>Frontier models move quickly, but only from the context they receive. Experienced professionals identify the missing facts that change the design—and the plausible answers that should not be trusted.</p>
+          <p>Frontier models move quickly, but only from the context they receive. I surface the missing business rules, failure risks, and operating constraints that change the design—and reject plausible answers that should not reach production.</p>
         </div>
         <div className="solution-preview-grid">
           {contextGaps.map(([title, body], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{body}</p></article>)}
@@ -59,14 +59,14 @@ export default function LandingPage() {
         <div className="mistake-list">
           <article><span>Before AI</span><p>Large teams performed nearly every design and implementation step manually.</p></article>
           <article><span>With AI</span><p>Models accelerate research, implementation, testing, and documentation.</p></article>
-          <article><span>Still human</span><p>Experts establish context, judge trade-offs, verify correctness, and own the outcome.</p></article>
+          <article><span>Still human</span><p>A named expert must establish context, judge trade-offs, verify correctness, and remain accountable for the outcome.</p></article>
         </div>
       </section>
 
       <section className="home-cta">
-        <span>EXPERTISE WITHOUT AN ENTIRE DATA DEPARTMENT</span>
-        <h2>Bring in doctorate-level data judgment exactly where your business needs it.</h2>
-        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/services/">See how we can help →</a></div>
+        <span>SENIOR EXPERTISE WITHOUT AN ENTIRE DATA DEPARTMENT</span>
+        <h2>Bring in a PhD data platform architect exactly where the decisions carry the most risk.</h2>
+        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/services/">See how I can help →</a></div>
       </section>
 
       <SiteFooter />

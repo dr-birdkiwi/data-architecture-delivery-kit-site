@@ -2,10 +2,10 @@ import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 
 const expertise = [
-  ["01 · DEPTH", "Doctorate-level technical judgment", "Strong foundations in computer science, data architecture, distributed systems, analytics, and the reasoning required to evaluate unfamiliar technology responsibly."],
-  ["02 · EXPERIENCE", "Production—not theoretical—architecture", "Designs are judged against failure, recovery, change, cost, governance, and the capabilities of the people who must operate them."],
-  ["03 · OWNERSHIP", "Architecture through operation", "We can remain involved from discovery and design through implementation, migration, validation, handover, and continuing assurance."],
-  ["04 · INDEPENDENCE", "Technology follows the requirement", "Recommendations are driven by workload, risk, existing systems, team capability, and economics—not by a preferred vendor or fashionable architecture."],
+  ["01 · DEPTH", "PhD-level technical judgment", "A Doctor of Philosophy in Computer Science, combined with 7+ years building secure cloud-native analytics platforms across digital assets, investment management, and banking."],
+  ["02 · SCALE", "Production systems—not slideware", "Built and operated a Dremio and Apache Iceberg lakehouse with Superset supporting an approximately 570-model dbt estate on Kubernetes."],
+  ["03 · GOVERNED AI", "Natural-language access without surrendering control", "Designed production MCP services for governed analytics through Claude, while deterministic controls ensure the model never writes SQL or accesses the database directly."],
+  ["04 · DELIVERY", "Architecture carried through implementation", "Led platform transitions across GCP and AWS, and used AI agents to accelerate a 174-model warehouse migration backlog without delegating judgment to the model."],
 ];
 
 const evidence = [
@@ -32,14 +32,14 @@ export default function ExpertisePage() {
 
       <section className="page-hero expertise-hero">
         <span className="kicker">SENIOR JUDGMENT, PRODUCTION DISCIPLINE</span>
-        <h1>Experienced data professionals<br /><em>stay accountable.</em></h1>
-        <p>AI helps us research, generate, test, and document faster. It does not replace the contextual judgment, verification, and responsibility required for consequential data systems.</p>
+        <h1>One senior data architect<br /><em>stays accountable.</em></h1>
+        <p>I am Jiwei Li, PhD—a hands-on data platform architect with 7+ years across digital assets, investment management, and banking. I use AI to move faster without delegating contextual judgment, verification, or responsibility to the model.</p>
         <div className="expert-principle"><span>AI proposes</span><i>→</i><span>Experts decide</span><i>→</i><span>Tools verify</span><i>→</i><b>Humans approve</b></div>
       </section>
 
       <section className="expertise-section">
         <div className="section-intro">
-          <span className="kicker">WHY CLIENTS BRING US IN</span>
+          <span className="kicker">WHY CLIENTS BRING ME IN</span>
           <h2>Senior thinking.<br /><em>Practical execution.</em></h2>
           <p>The value is not a diagram or a list of tools. It is disciplined judgment that remains useful when the system meets production constraints, organizational reality, and change.</p>
         </div>
@@ -57,7 +57,7 @@ export default function ExpertisePage() {
         </div>
         <div className="responsibility-split">
           <article><span>AI HELPS WITH</span><p>Discovery, research, candidate generation, implementation, tests, documentation, and identifying inconsistencies.</p></article>
-          <article><span>PROFESSIONALS OWN</span><p>Business interpretation, consequential assumptions, architecture trade-offs, validation adequacy, risk acceptance, and production approval.</p></article>
+          <article><span>I REMAIN ACCOUNTABLE FOR</span><p>Business interpretation, consequential assumptions, architecture trade-offs, validation adequacy, risk recommendations, and the evidence required for human production approval.</p></article>
         </div>
       </section>
 
@@ -65,7 +65,7 @@ export default function ExpertisePage() {
         <div className="knowledge-copy">
           <span className="kicker">PROFESSIONAL KNOWLEDGE THAT COMPOUNDS</span>
           <h2>Experience becomes<br /><em>repeatable discipline.</em></h2>
-          <p>Our professional knowledge is codified into reusable standards, decision patterns, checks, and delivery practices. Every engagement benefits from accumulated experience without treating different companies as identical.</p>
+          <p>My professional knowledge is codified into reusable standards, decision patterns, checks, and delivery practices. Each engagement benefits from accumulated experience without treating different companies as identical.</p>
           <div className="knowledge-tags"><span>Decision patterns</span><span>Failure scenarios</span><span>Architecture checks</span><span>Delivery practices</span><span>Review evidence</span></div>
         </div>
         <aside className="knowledge-card">
@@ -79,7 +79,7 @@ export default function ExpertisePage() {
         <div className="section-intro">
           <span className="kicker">VALIDATION BOUNDARIES</span>
           <h2>“Checked” must say<br /><em>what was actually checked.</em></h2>
-          <p>A declared intention is not deployment proof. A valid configuration is not operational reliability. We keep those evidence levels separate.</p>
+          <p>A declared intention is not deployment proof. A valid configuration is not operational reliability. Those evidence levels remain separate.</p>
         </div>
         <div className="evidence-levels">
           {evidence.map(([number, title, body]) => <article key={number}><span>{number}</span><div><h3>{title}</h3><p>{body}</p></div></article>)}
@@ -99,7 +99,7 @@ export default function ExpertisePage() {
       <section className="repo-cta">
         <span>BRING SENIOR JUDGMENT TO YOUR DATA PROBLEM</span>
         <h2>Start with the business risk, uncertainty, or decision that needs expert attention.</h2>
-        <a className="button lime" href="mailto:hello@arcanddatum.example?subject=Data%20architecture%20conversation">Discuss your data problem →</a>
+        <a className="button lime" href="mailto:jiwei.li.phd@gmail.com?subject=Data%20architecture%20conversation">Discuss your data problem →</a>
       </section>
 
       <SiteFooter />
