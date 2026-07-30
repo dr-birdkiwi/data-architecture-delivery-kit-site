@@ -97,9 +97,9 @@ export default function ExpertisePage() {
       </section>
 
       <section className="repo-cta">
-        <span>TRANSPARENT DELIVERY DISCIPLINE</span>
-        <h2>Inspect the public framework without exposing client-specific knowledge or evidence.</h2>
-        <a className="button lime" href="https://github.com/dr-birdkiwi/data-architecture-delivery-kit" target="_blank" rel="noreferrer">Open the public framework ↗</a>
+        <span>BRING SENIOR JUDGMENT TO YOUR DATA PROBLEM</span>
+        <h2>Start with the business risk, uncertainty, or decision that needs expert attention.</h2>
+        <a className="button lime" href="mailto:hello@dataarchitecture.example?subject=Data%20architecture%20conversation">Discuss your data problem →</a>
       </section>
 
       <SiteFooter />

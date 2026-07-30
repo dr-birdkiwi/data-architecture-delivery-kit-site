@@ -1,6 +1,6 @@
 # Data Architecture Delivery website
 
-Public services website for expert-led data architecture, optional implementation, modernization, and continuous data assurance. The public delivery framework remains supporting evidence rather than the service being sold.
+Public services website for expert-led data architecture, optional implementation, modernization, and continuous data assurance. The internal delivery kit is not exposed by the website.
 
 ## Live site
 
