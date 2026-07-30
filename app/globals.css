@@ -129,7 +129,7 @@ h1 em, h2 em { color: var(--green); font-family: Georgia, serif; font-weight: 40
 .deliverable-list { margin-top: 48px; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .deliverable-list article { min-height: 250px; padding: 24px; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .deliverable-list article > span { color: var(--green); font: 750 11px var(--font-geist-mono); }
-.deliverable-list h3 { margin: 64px 0 10px; font-size: 21px; }
+.deliverable-list h3 { margin: 42px 0 10px; font-size: 21px; }
 .deliverable-list p { margin: 0; color: var(--ink-soft); font-size: 16px; line-height: 1.6; }
 .start-section { padding: 100px 6vw; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 18px 48px; color: var(--white); background: var(--navy); }
 .start-section > span { grid-column: 1 / -1; color: var(--lime); font: 750 12px var(--font-geist-mono); letter-spacing: .1em; }
