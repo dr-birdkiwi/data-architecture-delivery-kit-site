@@ -162,7 +162,7 @@ h1 em, h2 em { color: var(--green); font-family: Georgia, serif; font-weight: 40
 .principles-section h2 em { color: var(--lime); }
 .principles-grid { margin-top: 50px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #3a4764; border-left: 1px solid #3a4764; }
 .principles-grid article { min-height: 210px; padding: 25px; border-right: 1px solid #3a4764; border-bottom: 1px solid #3a4764; }
-.principles-grid h3 { margin: 62px 0 10px; color: var(--lime); font-size: 21px; }
+.principles-grid h3 { margin: 42px 0 10px; color: var(--lime); font-size: 21px; }
 .principles-grid p { margin: 0; color: #bdc6d9; font-size: 16px; line-height: 1.62; }
 
 /* Footer */
