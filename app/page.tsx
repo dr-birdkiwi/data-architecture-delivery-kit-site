@@ -1,10 +1,16 @@
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 
-const contextGaps = [
-  ["AI sees only what you provide", "The decisive business rules, failure risks, and operating constraints are often unstated or scattered across the company."],
-  ["Plausible is not production-ready", "Valid-looking code can still produce conflicting numbers, fragile pipelines, or a system the team cannot operate."],
-  ["Reliability needs an owner", "A model does not reconcile discrepancies, recover failed systems, or accept responsibility when important data is wrong."],
+const reasonsToCall = [
+  ["Important numbers do not agree", "Finance, operations, and reporting produce different answers—and nobody can explain which one is authoritative."],
+  ["A platform decision is stuck", "A migration, modernization, or AI initiative has too many plausible options and too little decision-grade context."],
+  ["Senior ownership is missing", "The team can implement, but needs experienced judgment on architecture, reliability, governance, cost, or recovery."],
+];
+
+const selectedWork = [
+  ["ANALYTICAL PLATFORM", "Lakehouse at production scale", "Dremio, Apache Iceberg, Superset, Kubernetes, and an approximately 570-model dbt estate."],
+  ["GOVERNED AI", "Natural-language data access with hard boundaries", "Production MCP services for Claude, with deterministic controls between the model and enterprise data."],
+  ["PLATFORM MIGRATION", "AI-accelerated, human-governed transition", "A phased migration approach for an approximately 174-model analytical backlog across cloud platforms."],
 ];
 
 export default function LandingPage() {
@@ -19,7 +25,7 @@ export default function LandingPage() {
           <p>I help companies design, deliver, modernize, and continuously assure reliable data platforms—without the cost and delay of assembling an entire specialist team.</p>
           <div className="actions">
             <a className="button primary" href="/data-architecture-delivery-kit-site/services/">Explore services <span>→</span></a>
-            <a className="button ghost" href="/data-architecture-delivery-kit-site/expertise/">Why work with me</a>
+            <a className="button ghost" href="/data-architecture-delivery-kit-site/work/">See selected work</a>
           </div>
           <div className="micro-proof"><b>PHD IN COMPUTER SCIENCE</b><span /><strong>7+ years in production data platforms</strong><span /><strong>Finance and digital assets</strong></div>
         </div>
@@ -45,12 +51,12 @@ export default function LandingPage() {
 
       <section className="home-section solutions-preview">
         <div className="section-intro">
-          <span className="kicker">WHY EXPERTS STILL MATTER</span>
-          <h2>AI can generate a data system.<br /><em>It cannot know whether it is the right one.</em></h2>
-          <p>Frontier models move quickly, but only from the context they receive. I surface the missing business rules, failure risks, and operating constraints that change the design—and reject plausible answers that should not reach production.</p>
+          <span className="kicker">WHEN TO BRING ME IN</span>
+          <h2>Your data problem is important.<br /><em>The right answer is not obvious.</em></h2>
+          <p>I work where business meaning, technical trade-offs, and operating risk meet—before a plausible answer becomes an expensive commitment.</p>
         </div>
         <div className="solution-preview-grid">
-          {contextGaps.map(([title, body], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{body}</p></article>)}
+          {reasonsToCall.map(([title, body], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{body}</p></article>)}
         </div>
       </section>
 
@@ -63,10 +69,22 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section className="home-section work-preview-section">
+        <div className="section-intro">
+          <span className="kicker">SELECTED EXPERIENCE</span>
+          <h2>Not theoretical architecture.<br /><em>Work carried into production.</em></h2>
+          <p>Selected examples are anonymized to protect client confidentiality. Each shows the scale, controls, and operating reality behind the recommendation.</p>
+        </div>
+        <div className="work-preview-grid">
+          {selectedWork.map(([label, title, body]) => <article key={label}><span>{label}</span><h3>{title}</h3><p>{body}</p></article>)}
+        </div>
+        <a className="inline-cta" href="/data-architecture-delivery-kit-site/work/">Review the selected work <span>→</span></a>
+      </section>
+
       <section className="home-cta">
         <span>SENIOR EXPERTISE WITHOUT AN ENTIRE DATA DEPARTMENT</span>
-        <h2>Bring in a PhD data platform architect exactly where the decisions carry the most risk.</h2>
-        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/services/">See how I can help →</a></div>
+        <h2>Start with a focused diagnostic of the risks, decisions, and next steps that matter most.</h2>
+        <div className="actions centered"><a className="button lime" href="/data-architecture-delivery-kit-site/services/#diagnostic">See the Architecture Diagnostic →</a></div>
       </section>
 
       <SiteFooter />

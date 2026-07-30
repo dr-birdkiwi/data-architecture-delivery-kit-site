@@ -20,8 +20,8 @@ const engagementModels = [
     number: "03",
     label: "ONGOING PARTNERSHIP",
     title: "Retain a fractional architect",
-    body: "A continuing retainer keeps senior judgment available after launch, with a monthly architecture review, agreed incident-response SLA, ongoing data-quality and cost analysis, and a prioritized improvement backlog.",
-    includes: ["Monthly architecture review", "Incident analysis SLA", "Quality and cost assurance", "Improvement backlog"],
+    body: "A continuing retainer keeps senior judgment available after launch, with a monthly architecture review, defined response windows, ongoing data-quality and cost analysis, and a prioritized improvement backlog.",
+    includes: ["Monthly architecture review", "Defined response coverage", "Quality and cost assurance", "Improvement backlog"],
   },
 ];
 
@@ -71,6 +71,22 @@ const engagementOutputs = [
   ["Ownership", "Documentation, runbooks, handover, and a clear operating model."],
 ];
 
+const diagnosticOutputs = [
+  ["01", "Context", "A concise view of the business objective, current environment, constraints, assumptions, and unresolved facts."],
+  ["02", "Risk", "The most consequential reliability, correctness, security, cost, and operating risks—not a generic checklist."],
+  ["03", "Decisions", "The architecture choices that need attention now, credible alternatives, and the evidence still required."],
+  ["04", "Next steps", "A prioritized action plan that your team can use, whether or not I continue into delivery."],
+];
+
+const frequentlyAsked = [
+  ["Do you only advise?", "No. I can stop after an independent assessment, work alongside your engineers, or carry the agreed design through implementation, validation, documentation, and handover."],
+  ["Do you replace our existing platform?", "Only when replacement is justified. Existing systems, skills, contracts, migration risk, and business continuity are treated as real design constraints."],
+  ["Who actually performs the work?", "I lead the architecture and remain directly involved in the work described in the engagement. There is no automatic junior handoff or undisclosed outsourcing."],
+  ["What happens after launch?", "An ongoing partnership can cover scheduled architecture reviews, quality and cost analysis, incident investigation, and improvement planning. Coverage and response windows are defined explicitly; 24/7 support is not implied."],
+  ["How is sensitive information handled?", "Client-specific evidence, decisions, and implementation details remain separated from reusable professional knowledge. Access and data-handling boundaries are agreed before evidence is reviewed."],
+  ["What is the first step?", "Send a short description of what is unreliable, expensive, slow, or blocked. I will use an initial conversation to determine whether a focused diagnostic is appropriate."],
+];
+
 export default function ServicesPage() {
   return (
     <main>
@@ -80,6 +96,18 @@ export default function ServicesPage() {
         <span className="kicker">FROM FIRST DECISION TO DAILY RELIABILITY</span>
         <h1>One accountable architect—<br /><em>from decision to operation.</em></h1>
         <p>Work directly with me for focused advice, complete delivery, or continuing fractional architecture. The engagement starts where your team needs senior judgment and ends at the handoff point you choose.</p>
+      </section>
+
+      <section className="diagnostic-section" id="diagnostic">
+        <div className="diagnostic-intro">
+          <span className="kicker light">THE LOW-RISK STARTING POINT</span>
+          <h2>Data Architecture<br /><em>Diagnostic.</em></h2>
+          <p>A bounded first engagement for companies that know something is wrong, costly, risky, or blocked—but do not yet have a complete requirements document or agreed solution.</p>
+          <a className="button lime" href="mailto:jiwei.li.phd@gmail.com?subject=Data%20Architecture%20Diagnostic">Discuss a diagnostic →</a>
+        </div>
+        <div className="diagnostic-output">
+          {diagnosticOutputs.map(([number, title, body]) => <article key={number}><span>{number}</span><div><h3>{title}</h3><p>{body}</p></div></article>)}
+        </div>
       </section>
 
       <section className="engagement-section">
@@ -134,6 +162,17 @@ export default function ServicesPage() {
       <section className="brownfield-note">
         <div><span className="kicker light">BUILT AROUND REALITY</span><h2>Your current systems are part of the solution.</h2></div>
         <p>I account for existing technology, contracts, skills, security requirements, budgets, and migration limits. Improvement does not automatically mean replacement.</p>
+      </section>
+
+      <section className="faq-section">
+        <div className="section-intro">
+          <span className="kicker">BEFORE WE WORK TOGETHER</span>
+          <h2>Clear boundaries<br /><em>make a small practice dependable.</em></h2>
+          <p>The engagement should be understandable before access is granted or technical work begins.</p>
+        </div>
+        <div className="faq-list">
+          {frequentlyAsked.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}
+        </div>
       </section>
 
       <section className="start-section" id="start">
