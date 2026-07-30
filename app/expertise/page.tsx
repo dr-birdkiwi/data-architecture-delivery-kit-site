@@ -99,7 +99,7 @@ export default function ExpertisePage() {
       <section className="repo-cta">
         <span>BRING SENIOR JUDGMENT TO YOUR DATA PROBLEM</span>
         <h2>Start with the business risk, uncertainty, or decision that needs expert attention.</h2>
-        <a className="button lime" href="mailto:hello@dataarchitecture.example?subject=Data%20architecture%20conversation">Discuss your data problem →</a>
+        <a className="button lime" href="mailto:hello@arcanddatum.example?subject=Data%20architecture%20conversation">Discuss your data problem →</a>
       </section>
 
       <SiteFooter />

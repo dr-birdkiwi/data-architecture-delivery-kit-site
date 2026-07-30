@@ -140,7 +140,7 @@ export default function ServicesPage() {
         <span>START WITH THE BUSINESS PROBLEM</span>
         <h2>Tell us what is unreliable, expensive, slow, or preventing the business from moving forward.</h2>
         <p>You do not need to arrive with a technology choice or a complete requirements document. A useful first conversation begins with the problem, who it affects, and what happens if it remains unsolved.</p>
-        <a className="button lime" href="mailto:hello@dataarchitecture.example?subject=Data%20architecture%20conversation">Email us about your data problem →</a>
+        <a className="button lime" href="mailto:hello@arcanddatum.example?subject=Data%20architecture%20conversation">Email us about your data problem →</a>
       </section>
 
       <SiteFooter />
